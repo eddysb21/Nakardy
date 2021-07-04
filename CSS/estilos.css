@@ -1,0 +1,316 @@
+/* 'Open Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* Montserrat', sans-serif */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* 'Tangerine', cursive */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+/* 'Dancing Script', cursive */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* 'Poppins', sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+/* 'Kodchasan', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@1,200&display=swap');
+/* font-family: 'Shanti', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Shanti&display=swap');
+/* font-family: 'Shanti', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Shanti&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: rgba(223, 220, 220, 0.726); */
+  line-height: 1.5;
+}
+html {
+  display: block;
+  
+}
+
+
+/* Cuerpo del contenido */
+/*
+
+Portada del contenido */
+header {
+  background-color: #7989c742;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(105, 105, 105, 0.212);
+  margin-bottom: .5rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.portada img {
+  opacity: 50%;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  bottom: 0px;
+  z-index: -1;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.logo img {
+  display: block;
+  margin: 1rem auto;
+  width: 190px;
+  height: 135px;
+  border-radius: 50%;
+}
+h1 {
+  color: aliceblue;
+  border-radius: 5px;
+}
+.titulo_header{
+  text-align: center;
+  color: #09b4a0f0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.691);
+  letter-spacing: 5px;
+  word-spacing: 20px;
+  font-weight: 900;
+}
+/* --------------------- */
+/* Titulos del cuerpo izquierdo */
+/* --------------------- */
+aside{
+  display: block;
+}
+.cuadro {
+  border: 1px solid rgba(185, 184, 184, 0.404);
+  border-radius: 20px;
+  position: sticky;
+  top: 25px;
+  margin:2rem auto;
+  background-color:#c9c9c954;
+  width: 50%;
+}
+.cuadro ul .lista-horario{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   /* justify-content: center; */
+}
+.cuadro ul li{
+  padding: 2px;
+  margin: 0rem;
+  /* background-color: #d6dbdf44; */
+  border-radius:15px;
+}
+.cuadro li img{
+    margin-bottom: -6px;
+}
+/* Titulos del cuerpo derecho*/
+.cuerpo_derecho {
+  width: 95%;
+
+}
+.catalogo_uno {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: xx-large;
+  font-weight: 700;
+  padding: 2rem;
+  letter-spacing: .6rem;
+  text-align:  center;
+}
+.catalogo_uno p {
+  color: #00121f;
+  background-color: #5092e921;
+  border: 1px solid rgba(221, 221, 221, 0.342);
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  padding: 2rem;
+  
+}
+.titulo p {
+  color: #000000bc;
+  /* background-color: #5092e9; */
+  border: 2px solid rgba(221, 221, 221, 0.294);
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 22px;
+  letter-spacing: .5rem;
+  font-weight: 900;
+  text-align:  center;
+}
+
+/*
+    Cuerpo
+*/
+.cuerpo {
+  /* border: 2px solid red; */
+  display: grid;
+  gap: .2rem;
+  /* overflow: hidden; */
+  grid-auto-flow: dense;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
+  background-color: #c3fbff45;
+  border-radius: 30px;
+  /* border: 2px solid rgba(236, 236, 236, 0.534); */
+}
+.subtitulo {
+  margin: 0;
+  color: #000;
+  display: inline;
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sabor {
+  color: #fff;
+  margin: 7px 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+  font-family: "Montserrat", cursive;
+  margin-top: 0;
+}
+
+.linea-division {
+  width: 80%;
+  height: 2px;
+  background-color: #993617;
+}
+.cuerpo_derecho {
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  width:auto;
+}
+
+/* ----------------------- */
+/* Estilos de materialize */
+/* ----------------------- */
+.carousel {
+  min-height: 500px;
+}
+.carousel .carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  
+}
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+}
+.carousel .indicators .indicator-item {
+  border-radius: 15px;
+  height: 3px;
+  margin: 0 5px;
+  background-color: #5092e9;
+}
+.container {
+  background: linear-gradient(to bottom, #ffffff, #0a000055);
+  width: 100%;
+  border-radius: 100px;
+}
+
+/* Footer */
+footer{
+  background-color: #5092e9;
+  text-align: center;
+  border-radius: 10px;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+  /* align-self: stretch; */
+  width: 100%;
+  height: 1000%;
+  padding: 3rem 9rem;
+}
+.redes{
+  margin: 0rem 1rem;
+  height: 80%;
+  text-align: center;
+}
+.redes-boton {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+.redes-boton a {
+  padding: 1rem;
+  /* margin: auto; */
+  color: white;
+  border-radius: 10px ;
+}
+.redes-boton a img{
+  /* border: 2px solid red; */
+  margin: -15px .8rem;
+  width: 45px;
+}
+.redes-boton a:hover {
+  transform: translateY(-1px);
+  cursor: pointer;
+  background-color: #ecececa9;
+  transition: ease-in-out 1s;
+  border-radius: 50px;
+  color:#000;
+}
+.mapa .copyrigth{
+  font-size: 12px;
+  text-align: right;
+  opacity: 0.5;
+}
+.informacion{
+  margin: 0rem 1rem;
+  height: 80%;
+  text-align: center;
+  padding: auto;
+}
+.title-uno{
+  /* border: 2px solid red; */
+  margin: 1.5rem 0;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: 'Kodchasan', sans-serif;;
+}
+.title{
+  /* border: 2px solid orange; */
+  font-size: 23px;
+  font-family: 'Shanti', sans-serif;
+}
+.cuerpo-de-title{
+  font-size: 17px;
+  color: white;
+  font-family: 'Shanti', sans-serif;
+}
+
+.mapa{
+  margin: 0rem 1rem;
+  text-align: center;
+  /* border: 2px solid green; */
+  width: auto;
+  height: 15rem;
+}
+
+
+

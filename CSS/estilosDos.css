@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    background-color: #F2F3F4;
+    display: block;
+}
+.container{
+    display: flex;
+    border: 2px solid red;
+    margin-top: 5rem;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: -1;
+}
+.container img{
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    /*  */
+}
